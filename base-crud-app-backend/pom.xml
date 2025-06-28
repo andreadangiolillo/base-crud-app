@@ -9,10 +9,10 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.andreadangiolillo</groupId>
-	<artifactId>userapp</artifactId>
+	<artifactId>base-crud-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>userapp</name>
-	<description>User App</description>
+	<name>base-crud-app</name>
+	<description>Base Crud App</description>
 	<url/>
 	<licenses>
 		<license/>
