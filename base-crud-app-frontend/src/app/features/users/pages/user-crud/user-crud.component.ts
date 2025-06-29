@@ -1,16 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { UsersStore } from '../../store/users.store';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { User } from '../../models/user.model';
-import { UserFormComponent } from '../../components/user-form/user-form.component';
 import { UserFilterComponent } from '../../components/user-filter/user-filter.component';
+import { UserFormComponent } from '../../components/user-form/user-form.component';
+import { User } from '../../models/user.model';
+import { UsersStore } from '../../store/users.store';
 
 @Component({
   standalone: true,
