@@ -1,0 +1,29 @@
+.crud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+
+  .crud-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  button mat-icon {
+    margin-right: 8px;
+  }
+}
+
+.full-width-table {
+  width: 100%;
+
+  th, td {
+    text-align: left;
+    padding: 8px 16px;
+  }
+
+  th {
+    font-weight: bold;
+  }
+}
