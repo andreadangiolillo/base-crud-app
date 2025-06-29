@@ -12,7 +12,7 @@ La struttura prevede:
 
 ## 🐳 Avvio completo con Docker Compose
 
-Puoi avviare l’intera applicazione (backend + frontend + database PostgreSQL) con un solo comando:
+E' possibile avviare l’intera applicazione (backend + frontend + database PostgreSQL) con un solo comando:
 
 ```bash
 docker-compose up --build
@@ -27,7 +27,7 @@ Una volta avviata l'applicazione, si può interagire con il sistema in due modi:
 Accedere tramite browser a: http://localhost:4200
 
 
-Da qui puoi:
+Da qui si può:
 - 👀 Visualizzare la lista degli utenti
 - 🔍 Cercare utenti per nome o cognome
 - ➕ Aggiungere un nuovo utente
