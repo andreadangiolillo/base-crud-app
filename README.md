@@ -58,4 +58,4 @@ Da qui si può eseguire tutte le operazioni sulle API:
 
 **Andrea D'Angiolillo**
 
-📫 Per info o supporto: [andrea.dangiolillo@gmail.com](mailto:andrea.dangiolillo@gmail.com)
+📫 Per info: [andrea.dangiolillo@gmail.com](mailto:andrea.dangiolillo@gmail.com)
