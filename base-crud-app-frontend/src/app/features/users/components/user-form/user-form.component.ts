@@ -31,6 +31,7 @@ export class UserFormComponent {
     @Inject(MAT_DIALOG_DATA) public data: User | null
   ) {
     this.form = this.fb.group({
+      id: [data?.id ?? null],
       name: [data?.name ?? '', Validators.required],
       surname: [data?.surname ?? '', Validators.required],
       email: [data?.email ?? '', [Validators.required, Validators.email]],

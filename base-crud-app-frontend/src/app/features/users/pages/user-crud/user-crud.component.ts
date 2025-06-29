@@ -10,6 +10,7 @@ import { UsersStore } from '../../store/users.store';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { User } from '../../models/user.model';
 import { UserFormComponent } from '../../components/user-form/user-form.component';
+import { UserFilterComponent } from '../../components/user-filter/user-filter.component';
 
 @Component({
   standalone: true,
@@ -64,9 +65,8 @@ export class UserCrudComponent implements OnInit {
         this._store.update(user.id, result);
       }
     });
-    
-  }
 
+  }
 
   onDeleteUser(id: number) {
     this._store.delete(id);
@@ -85,6 +85,14 @@ export class UserCrudComponent implements OnInit {
     input.value = '';
   }
 
+  onFilterClick() {
+    const dialogRef = this.dialog.open(UserFilterComponent, {
+      data: this._store.userFilter()
+    });
 
+    dialogRef.afterClosed().subscribe(filter => {
+      this._store.updateFilter(filter);
+    });
+  }
 
 }

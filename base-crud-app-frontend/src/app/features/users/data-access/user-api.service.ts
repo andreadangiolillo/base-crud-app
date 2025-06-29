@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { User } from '../models/user.model';
 import { Observable } from 'rxjs';
+import { UserFilter } from '../models/user-filter.model';
 
 @Injectable({ providedIn: 'root' })
 export class UserApiService {
@@ -35,6 +36,17 @@ export class UserApiService {
 
   search(params: { name?: string; surname?: string }) {
     return this.http.get<User[]>(`${this.baseUrl}/search`, { params });
+  }
+
+  refresh(userFilter: UserFilter | null): Observable<User[]> {
+    if (userFilter) {
+      const params: any = {};
+      if (userFilter.name) params.name = userFilter.name;
+      if (userFilter.surname) params.surname = userFilter.surname;
+      return this.search(params);
+    } else {
+      return this.findAll();
+    }
   }
 
 
